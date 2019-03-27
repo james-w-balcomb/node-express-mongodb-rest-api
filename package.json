@@ -1,0 +1,31 @@
+{
+  "name": "node-express-mongodb-rest-api",
+  "version": "0.0.1",
+  "description": "REST API using Node.js, Express.js, Mongoose, MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/james-w-balcomb/node-express-mongodb-rest-api.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "Mongoose",
+    "MongoDB",
+    "REST",
+    "API",
+    "JavaScript"
+  ],
+  "author": "James Balcomb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/james-w-balcomb/node-express-mongodb-rest-api/issues"
+  },
+  "homepage": "https://github.com/james-w-balcomb/node-express-mongodb-rest-api#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
