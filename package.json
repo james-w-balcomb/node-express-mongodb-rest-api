@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/james-w-balcomb/node-express-mongodb-rest-api#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongodb": "^3.2.2"
   }
 }
