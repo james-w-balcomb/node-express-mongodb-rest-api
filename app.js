@@ -86,6 +86,22 @@ app.delete('/delete/:documentId', async (req, res) => {
   res.send({ message: 'Deleted Document' })
 })
 
+// Get Array of Field from Documents
+async function getFieldArray() {
+    let fieldArrayObject = {}
+    fieldArrayObject["fieldArray"] = []
+    await mongoConnection.then(client => client.db('test').collection('test').find({}).forEach(function(doc) {
+      let fieldValue = doc.KandR
+      fieldArrayObject["fieldArray"].push(fieldValue)
+      })
+    )
+    return fieldArrayObject
+}
+app.get('/field-array', async (req, res) => {
+  console.log('get /field-array')
+  res.json(await getFieldArray())
+})
+
 app.get('/', function(req, res) {
     mongoConnection.then(client => client.db('test').collection('test').find({}).toArray(function(err, docs) {
         if(err) { console.error(err) }
